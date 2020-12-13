@@ -1,0 +1,1986 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1018.2303                               -->
+<workbook original-version='18.1' source-build='2020.3.2 (20203.20.1018.2303)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='KSEA' inline='true' name='federated.1d6ngyl1vgli921d38jlg1tftvx1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='KSEA' name='textscan.0ibv99j1y83f2i137mg441cf2spm'>
+            <connection class='textscan' directory='D:/Dropbox/data-science/weather_analysis/data' filename='KSEA.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ibv99j1y83f2i137mg441cf2spm' name='KPHX.csv' table='[KPHX#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='integer' name='actual_mean_temp' ordinal='1' />
+            <column datatype='integer' name='actual_min_temp' ordinal='2' />
+            <column datatype='integer' name='actual_max_temp' ordinal='3' />
+            <column datatype='integer' name='average_min_temp' ordinal='4' />
+            <column datatype='integer' name='average_max_temp' ordinal='5' />
+            <column datatype='integer' name='record_min_temp' ordinal='6' />
+            <column datatype='integer' name='record_max_temp' ordinal='7' />
+            <column datatype='integer' name='record_min_temp_year' ordinal='8' />
+            <column datatype='integer' name='record_max_temp_year' ordinal='9' />
+            <column datatype='real' name='actual_precipitation' ordinal='10' />
+            <column datatype='real' name='average_precipitation' ordinal='11' />
+            <column datatype='real' name='record_precipitation' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0ibv99j1y83f2i137mg441cf2spm' name='KSEA.csv' table='[KSEA#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='date' ordinal='0' />
+              <column datatype='integer' name='actual_mean_temp' ordinal='1' />
+              <column datatype='integer' name='actual_min_temp' ordinal='2' />
+              <column datatype='integer' name='actual_max_temp' ordinal='3' />
+              <column datatype='integer' name='average_min_temp' ordinal='4' />
+              <column datatype='integer' name='average_max_temp' ordinal='5' />
+              <column datatype='integer' name='record_min_temp' ordinal='6' />
+              <column datatype='integer' name='record_max_temp' ordinal='7' />
+              <column datatype='integer' name='record_min_temp_year' ordinal='8' />
+              <column datatype='integer' name='record_max_temp_year' ordinal='9' />
+              <column datatype='real' name='actual_precipitation' ordinal='10' />
+              <column datatype='real' name='average_precipitation' ordinal='11' />
+              <column datatype='real' name='record_precipitation' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0ibv99j1y83f2i137mg441cf2spm' name='KPHX.csv' table='[KPHX#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='date' ordinal='0' />
+              <column datatype='integer' name='actual_mean_temp' ordinal='1' />
+              <column datatype='integer' name='actual_min_temp' ordinal='2' />
+              <column datatype='integer' name='actual_max_temp' ordinal='3' />
+              <column datatype='integer' name='average_min_temp' ordinal='4' />
+              <column datatype='integer' name='average_max_temp' ordinal='5' />
+              <column datatype='integer' name='record_min_temp' ordinal='6' />
+              <column datatype='integer' name='record_max_temp' ordinal='7' />
+              <column datatype='integer' name='record_min_temp_year' ordinal='8' />
+              <column datatype='integer' name='record_max_temp_year' ordinal='9' />
+              <column datatype='real' name='actual_precipitation' ordinal='10' />
+              <column datatype='real' name='average_precipitation' ordinal='11' />
+              <column datatype='real' name='record_precipitation' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[actual_max_temp (KPHX.csv)]' value='[KPHX.csv].[actual_max_temp]' />
+          <map key='[actual_max_temp]' value='[KSEA.csv].[actual_max_temp]' />
+          <map key='[actual_mean_temp (KPHX.csv)]' value='[KPHX.csv].[actual_mean_temp]' />
+          <map key='[actual_mean_temp]' value='[KSEA.csv].[actual_mean_temp]' />
+          <map key='[actual_min_temp (KPHX.csv)]' value='[KPHX.csv].[actual_min_temp]' />
+          <map key='[actual_min_temp]' value='[KSEA.csv].[actual_min_temp]' />
+          <map key='[actual_precipitation (KPHX.csv)]' value='[KPHX.csv].[actual_precipitation]' />
+          <map key='[actual_precipitation]' value='[KSEA.csv].[actual_precipitation]' />
+          <map key='[average_max_temp (KPHX.csv)]' value='[KPHX.csv].[average_max_temp]' />
+          <map key='[average_max_temp]' value='[KSEA.csv].[average_max_temp]' />
+          <map key='[average_min_temp (KPHX.csv)]' value='[KPHX.csv].[average_min_temp]' />
+          <map key='[average_min_temp]' value='[KSEA.csv].[average_min_temp]' />
+          <map key='[average_precipitation (KPHX.csv)]' value='[KPHX.csv].[average_precipitation]' />
+          <map key='[average_precipitation]' value='[KSEA.csv].[average_precipitation]' />
+          <map key='[date (KPHX.csv)]' value='[KPHX.csv].[date]' />
+          <map key='[date]' value='[KSEA.csv].[date]' />
+          <map key='[record_max_temp (KPHX.csv)]' value='[KPHX.csv].[record_max_temp]' />
+          <map key='[record_max_temp]' value='[KSEA.csv].[record_max_temp]' />
+          <map key='[record_max_temp_year (KPHX.csv)]' value='[KPHX.csv].[record_max_temp_year]' />
+          <map key='[record_max_temp_year]' value='[KSEA.csv].[record_max_temp_year]' />
+          <map key='[record_min_temp (KPHX.csv)]' value='[KPHX.csv].[record_min_temp]' />
+          <map key='[record_min_temp]' value='[KSEA.csv].[record_min_temp]' />
+          <map key='[record_min_temp_year (KPHX.csv)]' value='[KPHX.csv].[record_min_temp_year]' />
+          <map key='[record_min_temp_year]' value='[KSEA.csv].[record_min_temp_year]' />
+          <map key='[record_precipitation (KPHX.csv)]' value='[KPHX.csv].[record_precipitation]' />
+          <map key='[record_precipitation]' value='[KSEA.csv].[record_precipitation]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KSEA.csv_1E79930497D24D12926947E22CC93139]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_mean_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_mean_temp]</local-name>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias>actual_mean_temp</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KSEA.csv_1E79930497D24D12926947E22CC93139]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_min_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_min_temp]</local-name>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias>actual_min_temp</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KSEA.csv_1E79930497D24D12926947E22CC93139]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_max_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_max_temp]</local-name>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias>actual_max_temp</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KSEA.csv_1E79930497D24D12926947E22CC93139]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_min_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average_min_temp]</local-name>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias>average_min_temp</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KSEA.csv_1E79930497D24D12926947E22CC93139]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_max_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average_max_temp]</local-name>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias>average_max_temp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KSEA.csv_1E79930497D24D12926947E22CC93139]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_min_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_min_temp]</local-name>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias>record_min_temp</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KSEA.csv_1E79930497D24D12926947E22CC93139]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_max_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_max_temp]</local-name>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias>record_max_temp</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KSEA.csv_1E79930497D24D12926947E22CC93139]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_min_temp_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_min_temp_year]</local-name>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias>record_min_temp_year</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KSEA.csv_1E79930497D24D12926947E22CC93139]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_max_temp_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_max_temp_year]</local-name>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias>record_max_temp_year</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KSEA.csv_1E79930497D24D12926947E22CC93139]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_precipitation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[actual_precipitation]</local-name>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias>actual_precipitation</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KSEA.csv_1E79930497D24D12926947E22CC93139]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_precipitation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_precipitation]</local-name>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias>average_precipitation</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KSEA.csv_1E79930497D24D12926947E22CC93139]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_precipitation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[record_precipitation]</local-name>
+            <parent-name>[KSEA.csv]</parent-name>
+            <remote-alias>record_precipitation</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KSEA.csv_1E79930497D24D12926947E22CC93139]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date (KPHX.csv)]</local-name>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_mean_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_mean_temp (KPHX.csv)]</local-name>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias>actual_mean_temp</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_min_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_min_temp (KPHX.csv)]</local-name>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias>actual_min_temp</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_max_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_max_temp (KPHX.csv)]</local-name>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias>actual_max_temp</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_min_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average_min_temp (KPHX.csv)]</local-name>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias>average_min_temp</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_max_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average_max_temp (KPHX.csv)]</local-name>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias>average_max_temp</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_min_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_min_temp (KPHX.csv)]</local-name>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias>record_min_temp</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_max_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_max_temp (KPHX.csv)]</local-name>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias>record_max_temp</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_min_temp_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_min_temp_year (KPHX.csv)]</local-name>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias>record_min_temp_year</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_max_temp_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_max_temp_year (KPHX.csv)]</local-name>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias>record_max_temp_year</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_precipitation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[actual_precipitation (KPHX.csv)]</local-name>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias>actual_precipitation</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_precipitation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_precipitation (KPHX.csv)]</local-name>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias>average_precipitation</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_precipitation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[record_precipitation (KPHX.csv)]</local-name>
+            <parent-name>[KPHX.csv]</parent-name>
+            <remote-alias>record_precipitation</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Record Year?' datatype='boolean' name='[Calculation_602356507689553920]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[record_max_temp_year] &gt;= 2014' />
+      </column>
+      <column caption='record_max_year' datatype='boolean' name='[Calculation_602356507689799681]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[record_max_temp_year (KPHX.csv)] &gt;= 2014' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Record Max Temp (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[record_max_temp]' peg='0' size='3.95' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='KPHX.csv' datatype='table' name='[__tableau_internal_object_id__].[KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='KSEA.csv' datatype='table' name='[__tableau_internal_object_id__].[KSEA.csv_1E79930497D24D12926947E22CC93139]' role='measure' type='quantitative' />
+      <column caption='actual max temp (KPHX.csv)' datatype='integer' name='[actual_max_temp (KPHX.csv)]' role='measure' type='quantitative' />
+      <column caption='Actual Max Temp' datatype='integer' name='[actual_max_temp]' role='measure' type='quantitative' />
+      <column caption='actual mean temp (KPHX.csv)' datatype='integer' name='[actual_mean_temp (KPHX.csv)]' role='measure' type='quantitative' />
+      <column caption='Actual Mean Temp' datatype='integer' name='[actual_mean_temp]' role='measure' type='quantitative' />
+      <column caption='actual min temp (KPHX.csv)' datatype='integer' name='[actual_min_temp (KPHX.csv)]' role='measure' type='quantitative' />
+      <column caption='Actual Min Temp' datatype='integer' name='[actual_min_temp]' role='measure' type='quantitative' />
+      <column caption='actual precipitation (KPHX.csv)' datatype='real' name='[actual_precipitation (KPHX.csv)]' role='measure' type='quantitative' />
+      <column caption='Actual Precipitation' datatype='real' name='[actual_precipitation]' role='measure' type='quantitative' />
+      <column caption='average max temp (KPHX.csv)' datatype='integer' name='[average_max_temp (KPHX.csv)]' role='measure' type='quantitative' />
+      <column caption='Average Max Temp' datatype='integer' name='[average_max_temp]' role='measure' type='quantitative' />
+      <column caption='average min temp (KPHX.csv)' datatype='integer' name='[average_min_temp (KPHX.csv)]' role='measure' type='quantitative' />
+      <column caption='Average Min Temp' datatype='integer' name='[average_min_temp]' role='measure' type='quantitative' />
+      <column caption='average precipitation (KPHX.csv)' datatype='real' name='[average_precipitation (KPHX.csv)]' role='measure' type='quantitative' />
+      <column caption='Average Precipitation' datatype='real' name='[average_precipitation]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='record max temp (KPHX.csv)' datatype='integer' name='[record_max_temp (KPHX.csv)]' role='measure' type='quantitative' />
+      <column caption='Record Max Temp' datatype='integer' name='[record_max_temp]' role='measure' type='quantitative' />
+      <column caption='record max temp year (KPHX.csv)' datatype='integer' name='[record_max_temp_year (KPHX.csv)]' role='dimension' type='quantitative' />
+      <column caption='Record Max Temp Year' datatype='integer' name='[record_max_temp_year]' role='dimension' type='quantitative' />
+      <column caption='record min temp (KPHX.csv)' datatype='integer' name='[record_min_temp (KPHX.csv)]' role='measure' type='quantitative' />
+      <column caption='Record Min Temp' datatype='integer' name='[record_min_temp]' role='measure' type='quantitative' />
+      <column caption='record min temp year (KPHX.csv)' datatype='integer' name='[record_min_temp_year (KPHX.csv)]' role='dimension' type='quantitative' />
+      <column caption='Record Min Temp Year' datatype='integer' name='[record_min_temp_year]' role='dimension' type='quantitative' />
+      <column caption='record precipitation (KPHX.csv)' datatype='real' name='[record_precipitation (KPHX.csv)]' role='measure' type='quantitative' />
+      <column caption='Record Precipitation' datatype='real' name='[record_precipitation]' role='measure' type='quantitative' />
+      <column-instance column='[actual_max_temp (KPHX.csv)]' derivation='Avg' name='[avg:actual_max_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[actual_precipitation]' derivation='Avg' name='[avg:actual_precipitation:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_max_temp (KPHX.csv)]' derivation='Avg' name='[avg:average_max_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_max_temp]' derivation='Avg' name='[avg:average_max_temp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_max_temp (KPHX.csv)]' derivation='Count' name='[cnt:record_max_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_max_temp]' derivation='Count' name='[cnt:record_max_temp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_max_temp_year (KPHX.csv)]' derivation='Max' name='[max:record_max_temp_year (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_max_temp]' derivation='Min' name='[min:average_max_temp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[actual_mean_temp (KPHX.csv)]' derivation='None' name='[none:actual_mean_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_max_temp (KPHX.csv)]' derivation='None' name='[none:record_max_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_max_temp]' derivation='None' name='[none:record_max_temp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_max_temp_year (KPHX.csv)]' derivation='None' name='[none:record_max_temp_year (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_min_temp (KPHX.csv)]' derivation='None' name='[none:record_min_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[actual_max_temp (KPHX.csv)]' derivation='Sum' name='[sum:actual_max_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[actual_max_temp]' derivation='Sum' name='[sum:actual_max_temp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[actual_mean_temp (KPHX.csv)]' derivation='Sum' name='[sum:actual_mean_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[actual_mean_temp]' derivation='Sum' name='[sum:actual_mean_temp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[actual_min_temp (KPHX.csv)]' derivation='Sum' name='[sum:actual_min_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[actual_min_temp]' derivation='Sum' name='[sum:actual_min_temp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[actual_precipitation (KPHX.csv)]' derivation='Sum' name='[sum:actual_precipitation (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[actual_precipitation]' derivation='Sum' name='[sum:actual_precipitation:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_max_temp (KPHX.csv)]' derivation='Sum' name='[sum:average_max_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_max_temp]' derivation='Sum' name='[sum:average_max_temp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_min_temp (KPHX.csv)]' derivation='Sum' name='[sum:average_min_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_min_temp]' derivation='Sum' name='[sum:average_min_temp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_max_temp (KPHX.csv)]' derivation='Sum' name='[sum:record_max_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_max_temp]' derivation='Sum' name='[sum:record_max_temp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_max_temp_year (KPHX.csv)]' derivation='Sum' name='[sum:record_max_temp_year (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_min_temp (KPHX.csv)]' derivation='Sum' name='[sum:record_min_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_min_temp]' derivation='Sum' name='[sum:record_min_temp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_precipitation (KPHX.csv)]' derivation='Sum' name='[sum:record_precipitation (KPHX.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[record_precipitation]' derivation='Sum' name='[sum:record_precipitation:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[avg:average_max_temp:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[min:average_max_temp:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_min_temp (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_min_temp:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_precipitation (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_precipitation (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_min_temp (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_min_temp (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_min_temp:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_precipitation:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:average_min_temp (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:average_min_temp:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[avg:actual_max_temp (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[cnt:record_max_temp (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[cnt:record_max_temp:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_max_temp (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_max_temp:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[avg:actual_precipitation:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_mean_temp:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[avg:average_max_temp (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[max:record_max_temp_year (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:actual_mean_temp (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp_year (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_max_temp (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_max_temp:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_mean_temp (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_max_temp_year (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_precipitation:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:average_max_temp (KPHX.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:average_max_temp:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='date' />
+        <field-sort-custom-order field='actual_mean_temp' />
+        <field-sort-custom-order field='actual_min_temp' />
+        <field-sort-custom-order field='actual_max_temp' />
+        <field-sort-custom-order field='average_min_temp' />
+        <field-sort-custom-order field='average_max_temp' />
+        <field-sort-custom-order field='record_min_temp' />
+        <field-sort-custom-order field='record_max_temp' />
+        <field-sort-custom-order field='record_min_temp_year' />
+        <field-sort-custom-order field='record_max_temp_year' />
+        <field-sort-custom-order field='Calculation_602356507689553920' />
+        <field-sort-custom-order field='actual_precipitation' />
+        <field-sort-custom-order field='average_precipitation' />
+        <field-sort-custom-order field='record_precipitation' />
+        <field-sort-custom-order field='Record Max Temp (bin)' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='KPHX.csv' id='KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971'>
+            <properties context=''>
+              <relation connection='textscan.0ibv99j1y83f2i137mg441cf2spm' name='KPHX.csv' table='[KPHX#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='integer' name='actual_mean_temp' ordinal='1' />
+                  <column datatype='integer' name='actual_min_temp' ordinal='2' />
+                  <column datatype='integer' name='actual_max_temp' ordinal='3' />
+                  <column datatype='integer' name='average_min_temp' ordinal='4' />
+                  <column datatype='integer' name='average_max_temp' ordinal='5' />
+                  <column datatype='integer' name='record_min_temp' ordinal='6' />
+                  <column datatype='integer' name='record_max_temp' ordinal='7' />
+                  <column datatype='integer' name='record_min_temp_year' ordinal='8' />
+                  <column datatype='integer' name='record_max_temp_year' ordinal='9' />
+                  <column datatype='real' name='actual_precipitation' ordinal='10' />
+                  <column datatype='real' name='average_precipitation' ordinal='11' />
+                  <column datatype='real' name='record_precipitation' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='KSEA.csv' id='KSEA.csv_1E79930497D24D12926947E22CC93139'>
+            <properties context=''>
+              <relation connection='textscan.0ibv99j1y83f2i137mg441cf2spm' name='KSEA.csv' table='[KSEA#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='integer' name='actual_mean_temp' ordinal='1' />
+                  <column datatype='integer' name='actual_min_temp' ordinal='2' />
+                  <column datatype='integer' name='actual_max_temp' ordinal='3' />
+                  <column datatype='integer' name='average_min_temp' ordinal='4' />
+                  <column datatype='integer' name='average_max_temp' ordinal='5' />
+                  <column datatype='integer' name='record_min_temp' ordinal='6' />
+                  <column datatype='integer' name='record_max_temp' ordinal='7' />
+                  <column datatype='integer' name='record_min_temp_year' ordinal='8' />
+                  <column datatype='integer' name='record_max_temp_year' ordinal='9' />
+                  <column datatype='real' name='actual_precipitation' ordinal='10' />
+                  <column datatype='real' name='average_precipitation' ordinal='11' />
+                  <column datatype='real' name='record_precipitation' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[actual_max_temp]' />
+              <expression op='[actual_max_temp (KPHX.csv)]' />
+            </expression>
+            <first-end-point object-id='KSEA.csv_1E79930497D24D12926947E22CC93139' />
+            <second-end-point object-id='KPHX.csv_51D97C6D9A9E474EBDC02E1F80070971' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Phoenix Record Highs'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='KSEA' name='federated.1d6ngyl1vgli921d38jlg1tftvx1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1d6ngyl1vgli921d38jlg1tftvx1'>
+            <column datatype='date' name='[date (KPHX.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[record_max_temp (KPHX.csv)]' derivation='None' name='[none:record_max_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[record_max_temp_year (KPHX.csv)]' derivation='None' name='[none:record_max_temp_year (KPHX.csv):qk]' pivot='key' type='quantitative' />
+            <column caption='record max temp (KPHX.csv)' datatype='integer' name='[record_max_temp (KPHX.csv)]' role='measure' type='quantitative' />
+            <column caption='record max temp year (KPHX.csv)' datatype='integer' name='[record_max_temp_year (KPHX.csv)]' role='dimension' type='quantitative' />
+            <column-instance column='[date (KPHX.csv)]' derivation='Day-Trunc' name='[tdy:date (KPHX.csv):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp_year (KPHX.csv):qk]' included-values='in-range'>
+            <min>2014</min>
+            <max>2015</max>
+          </filter>
+          <slices>
+            <column>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp_year (KPHX.csv):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+                <format attr='size' value='1.3733149766921997' />
+                <format attr='mark-transparency' value='206' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#898989' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp (KPHX.csv):qk]</rows>
+        <cols>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[tdy:date (KPHX.csv):qk]</cols>
+      </table>
+      <simple-id uuid='{05E6F9BA-0E15-4F96-885E-B494F1BEB6D0}' />
+    </worksheet>
+    <worksheet name='Phoenix Temps'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='KSEA' name='federated.1d6ngyl1vgli921d38jlg1tftvx1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1d6ngyl1vgli921d38jlg1tftvx1'>
+            <column caption='record_max_year' datatype='boolean' name='[Calculation_602356507689799681]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[record_max_temp_year (KPHX.csv)] &gt;= 2014' />
+            </column>
+            <column caption='actual max temp (KPHX.csv)' datatype='integer' name='[actual_max_temp (KPHX.csv)]' role='measure' type='quantitative' />
+            <column caption='actual min temp (KPHX.csv)' datatype='integer' name='[actual_min_temp (KPHX.csv)]' role='measure' type='quantitative' />
+            <column caption='average max temp (KPHX.csv)' datatype='integer' name='[average_max_temp (KPHX.csv)]' role='measure' type='quantitative' />
+            <column caption='average min temp (KPHX.csv)' datatype='integer' name='[average_min_temp (KPHX.csv)]' role='measure' type='quantitative' />
+            <column datatype='date' name='[date (KPHX.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_602356507689799681]' derivation='None' name='[none:Calculation_602356507689799681:nk]' pivot='key' type='nominal' />
+            <column caption='record max temp (KPHX.csv)' datatype='integer' name='[record_max_temp (KPHX.csv)]' role='measure' type='quantitative' />
+            <column caption='record max temp year (KPHX.csv)' datatype='integer' name='[record_max_temp_year (KPHX.csv)]' role='dimension' type='quantitative' />
+            <column caption='record min temp (KPHX.csv)' datatype='integer' name='[record_min_temp (KPHX.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[actual_max_temp (KPHX.csv)]' derivation='Sum' name='[sum:actual_max_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[actual_min_temp (KPHX.csv)]' derivation='Sum' name='[sum:actual_min_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_max_temp (KPHX.csv)]' derivation='Sum' name='[sum:average_max_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_min_temp (KPHX.csv)]' derivation='Sum' name='[sum:average_min_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[record_max_temp (KPHX.csv)]' derivation='Sum' name='[sum:record_max_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[record_min_temp (KPHX.csv)]' derivation='Sum' name='[sum:record_min_temp (KPHX.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date (KPHX.csv)]' derivation='Day-Trunc' name='[tdy:date (KPHX.csv):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_max_temp (KPHX.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:average_max_temp (KPHX.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_max_temp (KPHX.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_min_temp (KPHX.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:average_min_temp (KPHX.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_min_temp (KPHX.csv):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_max_temp (KPHX.csv):qk]&quot;</bucket>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:average_max_temp (KPHX.csv):qk]&quot;</bucket>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_max_temp (KPHX.csv):qk]&quot;</bucket>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_min_temp (KPHX.csv):qk]&quot;</bucket>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:average_min_temp (KPHX.csv):qk]&quot;</bucket>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_min_temp (KPHX.csv):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:Calculation_602356507689799681:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_602356507689799681:nk]' member='false' />
+              <groupfilter function='member' level='[none:Calculation_602356507689799681:nk]' member='true' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[:Measure Names]</column>
+            <column>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:Calculation_602356507689799681:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[tdy:date (KPHX.csv):qk]' scope='cols' value='Date' />
+            <format attr='title' class='0' field='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[Multiple Values]' scope='rows' value='Temp °F' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[Multiple Values]</rows>
+        <cols>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[tdy:date (KPHX.csv):qk]</cols>
+      </table>
+      <simple-id uuid='{C09F05DC-274B-4A5E-9FB4-1FB995556682}' />
+    </worksheet>
+    <worksheet name='Seattle Record Highs'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='KSEA' name='federated.1d6ngyl1vgli921d38jlg1tftvx1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1d6ngyl1vgli921d38jlg1tftvx1'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[record_max_temp]' derivation='None' name='[none:record_max_temp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[record_max_temp_year]' derivation='None' name='[none:record_max_temp_year:qk]' pivot='key' type='quantitative' />
+            <column caption='Record Max Temp' datatype='integer' name='[record_max_temp]' role='measure' type='quantitative' />
+            <column caption='Record Max Temp Year' datatype='integer' name='[record_max_temp_year]' role='dimension' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp_year:qk]' included-values='in-range'>
+            <min>2014</min>
+            <max>2015</max>
+          </filter>
+          <slices>
+            <column>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp_year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+                <format attr='mark-transparency' value='206' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#898989' />
+                <format attr='size' value='1.3733149766921997' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp:qk]</rows>
+        <cols>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{F4376032-1A8F-4963-9D1C-002A3CF11166}' />
+    </worksheet>
+    <worksheet name='Seattle Temps'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='KSEA' name='federated.1d6ngyl1vgli921d38jlg1tftvx1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1d6ngyl1vgli921d38jlg1tftvx1'>
+            <column caption='Actual Max Temp' datatype='integer' name='[actual_max_temp]' role='measure' type='quantitative' />
+            <column caption='Actual Min Temp' datatype='integer' name='[actual_min_temp]' role='measure' type='quantitative' />
+            <column caption='Average Max Temp' datatype='integer' name='[average_max_temp]' role='measure' type='quantitative' />
+            <column caption='Average Min Temp' datatype='integer' name='[average_min_temp]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Record Max Temp' datatype='integer' name='[record_max_temp]' role='measure' type='quantitative' />
+            <column caption='Record Min Temp' datatype='integer' name='[record_min_temp]' role='measure' type='quantitative' />
+            <column-instance column='[actual_max_temp]' derivation='Sum' name='[sum:actual_max_temp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[actual_min_temp]' derivation='Sum' name='[sum:actual_min_temp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_max_temp]' derivation='Sum' name='[sum:average_max_temp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_min_temp]' derivation='Sum' name='[sum:average_min_temp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[record_max_temp]' derivation='Sum' name='[sum:record_max_temp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[record_min_temp]' derivation='Sum' name='[sum:record_min_temp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_max_temp:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_max_temp:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_min_temp:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:average_max_temp:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:average_min_temp:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_min_temp:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_max_temp:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_max_temp:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:actual_min_temp:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:average_max_temp:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:average_min_temp:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1d6ngyl1vgli921d38jlg1tftvx1].[sum:record_min_temp:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[Multiple Values]' scope='rows' value='Temp °F' />
+            <format attr='title' class='0' field='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[tdy:date:qk]' scope='cols' value='Date' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+                <format attr='line-interpolation' value='step' />
+                <format attr='mark-markers-mode' value='auto' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[Multiple Values]</rows>
+        <cols>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{1D1678A9-218E-4EBE-9337-57C569D50D0F}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Phoenix Temps'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:Calculation_602356507689799681:nk]' type='filter' />
+            <card pane-specification-id='10' param='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>false</bucket>
+          </multibucket>
+        </current-page>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[:Measure Names]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[dy:date (KPHX.csv):ok]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:Calculation_602356507689799681:nk]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp_year (KPHX.csv):qk]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp_year:qk]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[yr:date (KPHX.csv):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{52B5182D-B3AB-4CE5-AC8A-8814F4851285}' />
+    </window>
+    <window class='worksheet' name='Seattle Temps'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='10' param='[federated.1d6ngyl1vgli921d38jlg1tftvx1].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>false</bucket>
+          </multibucket>
+        </current-page>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[:Measure Names]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[dy:date (KPHX.csv):ok]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:Calculation_602356507689799681:nk]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp_year (KPHX.csv):qk]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp_year:qk]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[yr:date (KPHX.csv):ok]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B5D5B34E-87B9-45C0-BFCD-4933C809D405}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Phoenix Record Highs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:Record Max Temp (bin):qk]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp_year (KPHX.csv):qk]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp_year:qk]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[yr:date (KPHX.csv):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B0491F94-7FB0-461C-B9F4-6833564E4AE0}' />
+    </window>
+    <window class='worksheet' name='Seattle Record Highs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp (KPHX.csv):qk]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp:qk]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp_year (KPHX.csv):qk]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[none:record_max_temp_year:qk]</field>
+            <field>[federated.1d6ngyl1vgli921d38jlg1tftvx1].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E550B199-97E0-4FB6-AFCB-645130F3DCA2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Phoenix Record Highs' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAMYklEQVR4nO3cSW8baX7H8W8V1+JOSpREWYvt9rSnPcFg5jCnHBJgEmBOOeWUvJl+KTkG
+      yC3LYS45DTyDTmz34rXtthZKIiVxE9cqklWVQ2MmyJCNtmKZMvX8PoAPtoHHjyR/yapi1d8K
+      wzBExFD2+y6gfmSZvXcAQRBcxT5ErsV7ByCyzBSAGE0BiNEUgBhNAYjRFIAYTQGI0RSAGE0B
+      iNEUgBgtet0bABi7LtUvvsCORtn+1a+IxmLXvSUxxLUHEIYhe//27+QfPSYE9rtd7v3mN9e9
+      LTHER3EI5DcaAFjA9LxxvZsRo1x7AJZlsfLrX9PMZWmWipT/+q+ue0tiEOt9H4jxfZ9IJPLe
+      G/F9H8uysO1rb1IM8k7nAMHE5bDeYqOUodUfE8djMLHZ3apc2UauIiKRy3qnAOxYkkTUJpnO
+      YXdrDN0RUytJEAQEQaCnwmRpvVMAU29ArXaCbVuc1GpsbGwwHLjYtk0Yhnr1lqX10ZwDiFwH
+      nXGK0RSAGE0BiNEUgBhNAYjRFIAYTQGI0RSAGE0BiNEUgBhNAYjRFIAYTQGI0RSAGE0BiNEU
+      gBhNAYjRFIAY7Z2nQhzUm1RKWVo9j4Q9oeuG3Nm59aH3J/JBvfNUiGQ08r9TIcYBUSvUVAhZ
+      epeYClHDti1q9TqrKyu401BTIWTpaSqEGE0nwWI0BSBGUwBiNAUgRlMAYjQFIEZTAGI0BSBG
+      UwBiNAUgRlMAYjQFIEZTAGI0BSBGUwBiNAUgRlMAYjQFIEZ756kQ3x7UWMslOKy1KeaTEE2x
+      u1X50PsT+aDeeSpEPu0w9CZslTJcYDHsdgmCdU2FkKX2zlMhWq0mlUqF1sWAlWycmB3XVAhZ
+      epoKIUbTSbAYTQGI0RSAGE0BiNEUgBht5jJoGPicHB8xmgRsb2+TiL3TlVKRpTTzDnBer3F2
+      3gBCDqvH17AlkcWZCWBtc4vKSo4/PHzEzt3d69iTyMLMPQfoj6GcT2EtejciCzY3gChTiuu3
+      FIDceHPPcLsXXTrNHj4QW/CGRBZp5l6g738b0qqdktmskPiRBXQvkCyzmXeAYafBly9eM/FC
+      /nJT9/vLzTbnECgk6aSJWWN0l7/cdLMnwZZFfW+P3tTXSbDceHOvAk1GI/xF70TkGswEMB0O
+      SJQL3L/3QFeA5MabCWA0cIkl4jx5+BDvOnYkskAzJ8H5tTLBm7ck8xn+eHEzmLh8u39COZek
+      WmtRLDoM3JAH9+8teLsiV2smANfzyOTy2LEUruuSSSa/nwqRSTEaj7lVytIILdJOSBAEmgoh
+      S20mADtiE41GCcMx9dMm93ZvMfUGtNstKpUK7e6ArbxDzws1FUKW3typEO6gy/nFiO3N9R9d
+      QJ8EyzKbexn06ydPePLwIfVuf9H7EVmouQGkklEGEx+9rstNNzcAbxpy/6f3KeYyi96PyELN
+      DSAZj9BoXeheILnx5r8DTHocPD9kuujdiCzY7FSIMCCZLPOTz5KamSI33pz/4wHNZoeVzQ3i
+      i9+PyELNBGBZUT796U+IEzC5jh2JLNDco5ypN+DktLXovYgs3NwA2u0zvnu5r6tAcuPNDcBJ
+      FQgtd9F7EVm4uQG0mk3uP3igq0By482dC2TbEaKWboSQm2/uXKAgCACwI5EffTBed4PKMpt9
+      IKbX5j9++5/ErTh/8/d/R+o6diWyIDMBOLkSv/jZp5x2JySvY0ciCzT3PNcOp3jeVKNR5Mab
+      exLcH01wex2CP/tzd3BBrdmnmI5yMQrY3dLoRFlucwMorRTpuLN/2W63aR7V6a8UKGSLeihe
+      lt7cADrtDm6vzxT+z1NhhUKR89aQ9UKOeqPN9ua6HoqXpTY3gGwuQazFzCVQJ5Pn5z/PA7C2
+      vvmh9ybywc2fDTqZctY41yfBcuPN/T8+6g2p7GzoZji58ebOBboMfRIsy0xHOWI0BSBGUwBi
+      NAUgRlMAYjQFIEZTAGI0BSBGUwBiNAUgRlMAYjQFIEZTAGI0BSBGUwBitLmPRP6QUa9DrdVn
+      NZek64ZsVcofal8iC3GpAC66F7SPa3jcIm0FmgohS+9SAeTzBc6yA9JMGLhg27amQshS0yOR
+      YjSdBIvRFIAYTQGI0RSAGE0BiNEUgBhNAYjRFIAYTQGI0RSAGE0BiNEUgBhNAYjRFIAYTQGI
+      0RSAGE0BiNEUgBjtUs8EtxunnJy2yeUdAuLsblU+1L5EFuJSAYw9D891CbIOI8/VVAhZepcK
+      wEk5OCmHRDzGNPA1FUKWnqZCiNF0EixGUwBiNAUgRlMAYjQFIEZTAGI0BSBGUwBiNAUgRlMA
+      YjQFIEZTAGI0BSBGUwBiNAUgRlMAYjQFIEZTAGK0Sz0T3DqvUzttkyukGHkhn35y+wNtS2Qx
+      LhXAZDzG8zzGYRYnHmoqhCy9S06FSJFKu2QTEYZjNBVClp6mQojRdBIsRlMAYjQFIEZTAGI0
+      BSBGUwBitPe+DBqG338gdlXCMMSyrCtZKwgCbPvqGv+Y1/vjj9GE791VrnWpD8LmsSzryj4H
+      CMOQMAyv7IuzLOtKf4gf83pXHcDH/LValvWnX++91vu+A4gss8jnn3/++XX8w7VajVgsjjfq
+      cd7sM3V7vPzugE6jhm/FyaQdBr021VqTaODy/M0hlfXy3LX88ZDHX72gVMwznU4Zj/o0Lgb4
+      /RYv3u7jpAsk4xH2XzwjUijz3Vd/gEyFdGL2FalVP6TaGJBOxphOp7QbpwRWnGG3yfPX+yTt
+      Md8dnrNWLjEadNk/qpFgwjevD9ictz/f44v/ekwynaHTamFZAc1OHyfi8+SrLwmiGXLpJLX9
+      PVw7RnP/OS0/STGTnFmq16rxzYt9MhmHTneA228zIYrv9nn2/CUAL1/vsVlZxx+PePVmn2LW
+      4fePvmJna3Pu9+7spMrB4SG+naDTOGNv/4BSucQ3jx8zGIeUCjku2qecNocEow5vjk5ZX12Z
+      u9abV8+p1s5IJ+OcnR5RPe1RzMb59tnX9CcWr169YmOjgo3Ps2evWC0X+f3Dh1S2drDnvJgf
+      772iMx7ROR/RG3ZJxGP4vs/EHfDkvx+RLd8iEbV5+vQpq6tlvvzd70hvb5OY887w4ptHeL0B
+      bjxFp9UhHo3g+/77HwL9f4RhwGTsUqvXGI+GpHNlLMvi9u1dLs5OaDSabJRLpLN5Un2Po6MT
+      RqPpD653dlJlOOzzunpC0gqIRmyCANZ2NrGrx3gTH7BYXV1h2G3Q6Y9IDgaUs/mZtWpnDfpj
+      ixhjJqM+MSdNz2tTzES5s7vN0d5rXD8OgJPOkUkNqB4f4w4nhMDMt96Ksn1rnerbV/Rdi1K5
+      hGOFjLNrRGNxAt8HoLSySncy5LTZJRnpwXphZm9OpkQu2eTps+ekMgVK+RTjfo1KuUhl+zbp
+      qE8yEScEonGHQi7DcfWQydhj4gfEIrPBe5MpOzsVXr7Y496Dzwgsm5gVYkdjfzqsyhdLDN0O
+      Ryd1RsEPH8ZYsSTFhMVx/Zy720XoxrFCSK/eolxI0WsnCMIQIlHKKwXOjquMp1OG7oRcKjaz
+      XtTJMR62qFWH7GwXeFOdkHUi7GxtUdneIZv4/tB7dXWVYbtOdzSl3xuSy2dm1iqsbtLYf4U3
+      hnwMppMB0YhzPYdAvU4TP+Lg9VokM3kSiQT9ToOLkU/eiWAnUkwnIcmoT71xwd1PPmHqjUg6
+      ztz1XNclHovS73bpDMdMe2e0xgl++dkux6dtnJhFqbzG0cFb4pkSa4U0vhUjHv3zH2aI63pY
+      IfT6HYgkeP30CVv3f0nacmkPJty9s82o36PvTknHLY7qTe7cvYs/9XCSc/YXBhxVDymWN2ic
+      1rEsiDlZNspFjg6rOE6SVH6Vi/MjxlaCnY0VPN8iGZ99bfInLofHZ2yUCzQ6Q9x+k43te1jj
+      PsfnHVYLGbwggh36rBQy7B0csblzh4jlz98bEPgTqsd1tjbXOak3SMZs8qtrtE+PicWTkMiA
+      26Hdn3Dn9g6eN/rBtYa9Dl03IJuwGE4tpq7LSinL/sERxZUVhqMxiZjNernEm+/2WVnfJJWI
+      kEg4zDucH3seNj6jSUir3WF7Y5XBBLJOFNfzubhos7a2xsHb1zj5MqWMg5VIEJ2zmOd5TL0R
+      dixOo92jnHewk1mdA4jZ9DmAGE0BiNGu5SRYZBH+5Z//idLmfW5v5MnkymSyCex4htPDNzip
+      CP/6268VgNxcW7ufMBj2efv6iGnocNoZ84//8LdUjxoEk3N+9he/4H8AgiT6Y7v2InwAAAAA
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Phoenix Temps' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Seattle Record Highs' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAANJUlEQVR4nO3da28bV37H8e8M7xJ1o6ibJct2EqeJd+NFFwsvkABFgUW7QLe3J/s+2rfS
+      Piz6pLdnBdrtFmmx2c0C3U03N+ci23IcWzdSoiiREiXxMhRn5vSBkuymUixTskiR5/cB/MQa
+      cf5DzE9zzpk5cxxjjEHEUu55P0D5kV527gCEYfg86hDpinMHQKSXKQBiNQVArKYAiNUUALGa
+      AiBWUwDEagqAWE0BeIogCDg8PNTd7j4W7XYBl1WlWGT9H/4Rp1Zj6E9/xNXvfa/bJckF0BXg
+      G2z95jeMl3fIeE32f/42QRB0uyS5AArAN0hMTRMABnAnJ3BdfVX9yDnv49BBEBCJRJ5XPZdG
+      GIbkFxbwDw648t3vkhwY6HZJcgHaCsBBpUyhfEAmHaPWcrk2N9O3ARA7tNUJbnoeta1NfLIk
+      IknCMCQMQ42SSM9qKwCD6TSx0QwT6QHK+x6u62KM0RVAetal6AMYY9jM5XAjESavXMFxnHN9
+      nsiz6noAjDEsv/1L4j97i9Bx4C//nPk7d85TksgzuxRje43FRaLGEA9DaosPu12OWKTrAXAc
+      h8Hbtzl0XbxIhKHbr3W7JLFI15tAcNQMKuTzbOVyXH/lFUYzmXN9nsiz6voVAI4CsPezt5j6
+      yU8p/83fsrOx0e2SxBKXIgBeo4GztIQDDHhNdp886XZJYolLEYBkKgWvvooPVNODjL/8crdL
+      Ektcij7Al5/z+cICtQeLRIaHmLv9HbLzV8/9uSJPc2nmAxhjaL35X2QXHxK4Lk8+vEvir/+K
+      oeHhbpcmfexSNIEAWoeHsFvBAaJhiNtoUK9Wu12W9LlLE4BkKkX6R39CKZtlbXqK1OuvMzE9
+      3e2ypM9dmj7Al3zfByAavTStM+ljl+4s04kvnXRpmkAi3aAAdJExRpOJuqyt9oYJQ/wgJBJx
+      CEOIRjUR5iyMMeQ/vMvBu+8Sv3GDG3/8R0TU9OuKtr719bUltsoHpEfTtA4Nt165CWiZpHYd
+      7O3R/Ml/MNZsEubybFybZ+7WrW6XZaW2ApCdmCSf38ZkRknGjy7fWiLpDBwH88VrVgzguBF9
+      j13S1jDooVdjr95iJBWj1oKx4UG9FeKMCouLVN5/n9SNG8y/8YbeO9Qll+4+gEgn6c+OWE0B
+      EKspAGI1BUCspgCI1RQAsZoCIFZTAMRqCoBYTQEQqykAYjUFQKymAIjVFACxmgIgVmtrRljL
+      q5Ev7pIZTlCp+Vybm7moukQ6oq0AlEsldrZ3aXpxhkcntUyq9Lz23gphDI4JSA+PUtza4spU
+      VsukSk/TlEixmjrBYjUFQKymAIjVFACxmgIgVlMAxGoKgFhNARCrKQBiNQVArKYAiNUUALGa
+      AiBWUwDEagqAWE0BEKu1NSNsu5Bjo1hheGyQhme49XsvXlRdIh3RVgCCMCQMWvhESaeM5gRL
+      z2srACMjo1S9kInhAapNcF1Xc4Klp504J9iEIX4QEoudng/NCZZedmIneOHu+7z91i/xQjVt
+      pL+dGICRkTQhPoXCdqfrEemoEwNQ2i4Riw8yOzvZ6XpEOurEAAShITWQwul0NSIddmIAhgYj
+      5FaKBJ2uRqTDjgUg8H2S6WHCMGhvjFSkBx07x3MLn7DaCnjp5flu1CPSUcfuA+zk10nMTJME
+      3Ejk1H6A7gNILzvWBMrMzVItFnjy6DGtblQk0kEndoL9Zo18odTpWkQ67sQAVCpbLD9aQ/eB
+      pd8dC4B/2CQ6kGVqekiTBaTvHRsFqu0U+eijjzGRtG6ESd87fgVoeZR390nEY2oCSd87Ngza
+      8uoUtkpAhNn5WU4b4NQwqPSy4zd7HYfP7t+jUfeZmJ8l9Ts/2t8tsbSyTnYyQ2CiWiZVet6x
+      AMQSKW7ffo1G6H7t5AcYGh0nM97A8X2afqgpkdLzTnzcp1rZZrXcYvbqLLHf/UHQJD2SIfT2
+      qNdamhIpPe/EANS9Fs39CuH/+38nmiQzAowMkr342kQu3IlD/bFYDDcS1TCo9L0TA5BIJogn
+      k7oRJn3vxHO8Ud9hd7OK3+lqRDrsWACMCYnE0iSHIroCSN87do5vPlxg82CfSs0/9SaYSK87
+      Ngo0NDVDqtrkhWtDehRC+t6Jb4Zrhx6F6E9BEOC6Lo7T32OBmvcuxxQePGD3zf/GGRlm/sc/
+      ZnBkuNslXRj1c+VrgiBg96f/SWZ7m7HHTyj87zvdLulCKQDyNa7rwuAgACEQSQ91t6ALpj6A
+      HLNfLrP5q18THR1h/vXXicZip/9Sj1IAxGpqAonVFACxmgIgVmsrAF69SrG4TbPpUa01Lqom
+      kY5p60aYG4mwUy5RrR8Q+CE3X3oRY45WixTpRW1dAWLRCOmRMSImRMuHST9oaxjUhAEhLgQt
+      DkNIJeIaBpWepvsAYjWNAonVFACxmgIgVlMAxGoKgFhNARCrKQBiNQVArKYAiNUUALGaXosi
+      fSUIAtbv3QdjmP32t4hEn36KKwDSV1Z+/gtSv3gbgOU//ANe/OEPn/pyLzWBpK8crq3hcnRi
+      H67lTt1eAZC+MvrG6+ylUuylkoy98capr3bU49DSdxr1OgDJVOr5BqC2Vya3fcBo0qFJnGtz
+      MwqA9LS2OsHb5TI0W9Sjg7R8T8ukSs9rKwBTk1Os5jZJJeOEDV/LpErPUx9ArKZRILGaAiBW
+      UwDEagqAWE0BEKspAGI1BUCspgCI1RQAsZoCIFZTAKSvGGPwff+Zt9eUSOkb9VqNlX/6F0xp
+      m/QPfsD89++cOh9AVwDpG4UPPmRseZnxgyrVN998piuBAiB9Iz42yler1Q2PPNNTynocWvqG
+      MYbc3bs0i1tMff8Ow+Pjp/5Oe2uEmYDNYpnxkUFqLcPYcFoBkJ7WVid4Y3WJfT9O06vhB4aR
+      9ADGGIIguKj6RC5UWwGIxuJ4W5v4IxlcY3AcB8dxcF11JaQ3tdkEMrRaLaKRCIE5WjdYTSDp
+      ZeoEi9XUdhGrKQBiNQVA+kL14IBCPk8YHt0KK29vU9raOvWlbeoDSM/bKRQo/93fk2o0qP7+
+      dxi48QLhv/07AO5f/Bnzd+584+/qCiA9b2fxIel6nagxBJ/eY/eDD0gGAckg4OCjj596FVAA
+      pOeNvvQijXgcA7g3X2LktW/TchxajsPgrVef+rtqAklf2C2VONjZ4cqNG0SiUYq5HMYYpufn
+      n/pItAIgVlMTSKymAIjVFACxmgIgVlMAxGoKgFhNARCrtTUjbH97k/xeg5GEg+8kuDY3c1F1
+      iXREWwEIXRfTaBAk0tQbDS2TKj2vvTnB0SiReJxkPIofulomVXqeHoUQq6kTLFZTAMRqCoBY
+      TQEQqykAYrVzjwIZY76aiX8eYRh29BWLXx72aQsoPE+dPMZOf5+9emznXiHGcZznMgza6XeM
+      diMAnTzGTn+fnT62L/+d+7POewUQ6WVd6QP4/j65/A5Nz2N1dQUT+ty7/+Crn29uPGGrVCe/
+      9IilfOF8+zqs8cHdBTzPw/M86gcVNrd3CA4bPPjs8RdbhSwv3qPqG+7ffYdS9dkXWTsmPOS9
+      d9+jvLvHxvoG1YM9CsUSJvBZuL/422NcWWZ7/4C1R5+wvLl75t2try1x79NPKVf2yOXyfPLp
+      Ar7v83DhAa0vttlZf0y+XGdj5QGPVrfPfmzAR++/x8rqEpVKhdJuBc87pNlssrezyVr+6LNb
+      Xp2Hjx7TalR55727Z95XbavAx4v3WS9uk8+v06xXKZZ2qO1XeLKaO9oobHHv3iIm9PmfX/2a
+      sM0/551fJM8YWp5HobhD0Ijix6M4bpTx8bGvNhmfyLK702Rzq0x8BODsD91tr+dp1A94nNsg
+      4YREIy5hCNMTGcaGB7/YyiWbHae+V6JSbTJQq5NND59xjxGuzk2RX/6Mg4bD2ESGAcfgT2XJ
+      Zn57jJnxLHutBsXSHkmnCtNjT/nMb9YKYG4my+OVHLdeeRmco0dTstmv78urHlLY2sEZTAET
+      Zzw2mLoyzepqjroXEHMd9k2TdHaeycw49eYeALHkACNDg+Ryaxw2PfzQEHXP0lyJcO36NVY+
+      /YSGibK9X+dbN68Tj8UYqDWONnFjZMdH2cyv4Qc+9aZPOvnsp3Xnm0DGsL6xwcT4KIWtChMT
+      GZKJKEufLxGLJ5iYm2evmKPlJLg6M0mz1SKZSJx5d57nEY9Fqe7vU6kf4u8X2fWT3L45y9Lq
+      BolkiqtXZ8mvLJEYyjAxOkDgJIhHz9i+NCH53BpjE9OUips4DsRSQ0yND7O0tEQsliQ7M8tB
+      aZ0mCeanx2kGkIzHzrQ7/7DBxlaFmclRiuV9Yk7I+HiW1dVl4vEEw9lpmpUtakGEG7OTNFqG
+      VOJs+wJoNps0vQYuhrrvMhB3GBgcYre0SaXWYiCVIDM8wEpug6vXX8QxLVLJ1Jn2FRw2WMlv
+      cf36LLmVHBOT4+zXWwzGDIXSPkNDA8xMZPj88TITM3Ok4i6JRIp2ugbqA4jVdB9ArKYAiNW0
+      UrxYyXib/PO/vqsrgNjrhZde4f8AeBmpL9aUY3sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Seattle Temps' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -39,7 +39,7 @@ def plot_record_years(df, city, save_plot=False):
                   df.record_min_temp.min(),
                   df.record_min_temp.max(),
                   lw=2,
-                  color='b',
+                  color='tab:blue',
                   alpha=0.8)
 
     axs[1].scatter(df.record_max_temp,
@@ -52,7 +52,7 @@ def plot_record_years(df, city, save_plot=False):
                   df.record_max_temp.min(),
                   df.record_max_temp.max(),
                   lw=2,
-                  color='crimson',
+                  color='tab:red',
                   alpha=0.8)
 
     fig.suptitle(f'Record High Temps vs Year, {city}')
@@ -122,7 +122,7 @@ def main():
     'KCLT', 'KCQT', 'KHOU', 'KIND', 'KJAX',
     'KMDW', 'KNYC', 'KPHL', 'KPHX', 'KSEA'
     """
-    station = 'KPHX'
+    station = 'KSEA'
 
     df = pd.read_csv(f'data/{station}.csv')
 
