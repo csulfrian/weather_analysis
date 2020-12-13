@@ -1,1 +1,5 @@
 /notebooks
+
+visualize_weather.py
+wunderground_parser.py
+wunderground_scraper.py

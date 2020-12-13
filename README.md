@@ -6,7 +6,7 @@ Data from FiveThirtyEight's open data repository, all scraped from Wunderground.
 https://github.com/fivethirtyeight/data/tree/master/us-weather-history
 
 
-### Data Details
+## Data Details
 
 The data spans the one year period from July 1 2014 to June 30 2015. It includes the following data:
 - actual min, max, and mean temperature
@@ -26,4 +26,14 @@ from the following cities:
 - Chicago, IL
 - Philadelphia, PA
 - Seattle, WA
+
+## Goal
+
+I wanted to explore the occurrence of record temperature days, both high and low. We're all familiar with the fact that the world is getting warmer overall, but how do record temperatures on individual days tie in with this?
+
+*Horizontal lines indicate the median year of record temp*
+<img src="images/high_temps_vs_year_KPHX.png">
+
+*Histograms of the years that record temps occurred*
+<img src="images/record_temps_years_KPHX.png">
 
