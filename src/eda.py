@@ -120,11 +120,11 @@ def main():
     'KCLT', 'KCQT', 'KHOU', 'KIND', 'KJAX',
     'KMDW', 'KNYC', 'KPHL', 'KPHX', 'KSEA'
     """
-    station = 'KPHX'
+    station = 'KSEA'
 
     df = pd.read_csv(f'data/{station}.csv')
 
-    plot_record_years(df, station)
+    plot_record_years(df, station, save_plot=True)
 
     plot_records_hist(df, station, save_plot=True)
 
