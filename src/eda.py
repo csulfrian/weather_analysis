@@ -116,7 +116,7 @@ def plot_records_hist(df, city, save_plot=False):
 
 def main():
     """
-    Options for cities to query
+    Options for cities to query (these are airport codes)
     'KCLT', 'KCQT', 'KHOU', 'KIND', 'KJAX',
     'KMDW', 'KNYC', 'KPHL', 'KPHX', 'KSEA'
     """

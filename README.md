@@ -31,9 +31,26 @@ from the following cities:
 
 I wanted to explore the occurrence of record temperature days, both high and low. We're all familiar with the fact that the world is getting warmer overall, but how do record temperatures on individual days tie in with this?
 
+### Phoenix, AZ
+
 *Horizontal lines indicate the median year of record temp*
 <img src="images/high_temps_vs_year_KPHX.png">
 
 *Histograms of the years that record temps occurred*
 <img src="images/record_temps_years_KPHX.png">
 
+### Seattle, WA
+
+*Horizontal lines indicate the median year of record temp*
+<img src="images/high_temps_vs_year_KSEA.png">
+
+*Histograms of the years that record temps occurred*
+<img src="images/record_temps_years_KSEA.png">
+
+## Conclusion
+
+As we often hear, weather is not climate. The year that record temperatures occur vary widely depending on location, but there is a common trend: record lows happen more often in the first half of the 20th century while record highs are more likely to have been recorded in the second half. 
+
+## Further Exploration
+
+It would be interesting to examine how quickly the median year of records changes. 
