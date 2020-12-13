@@ -25,7 +25,7 @@ def plot_record_years(df, city, save_plot=False):
     None
     """
     fig, axs = plt.subplots(1, 2,
-                            figsize=(16, 8),
+                            figsize=(20, 12),
                             dpi=72,
                             sharey=True,
                             tight_layout=True)
@@ -92,17 +92,19 @@ def plot_records_hist(df, city, save_plot=False):
     num_bins = 50
 
     fig, axs = plt.subplots(1, 2,
-                            figsize=(16, 8),
+                            figsize=(20, 12),
                             dpi=72,
                             sharey=True,
                             tight_layout=True)
     axs[0].hist(df.record_min_temp_year,
                 density=False,
-                bins=num_bins)
+                bins=num_bins,
+                alpha=0.8)
     axs[1].hist(df.record_max_temp_year,
                 density=False,
                 bins=num_bins,
-                color='crimson')
+                color='crimson',
+                alpha=0.8)
 
     fig.suptitle(f'Record Temp Days Per Year, {city}')
     axs[0].set_ylabel('# Record Days')
@@ -120,7 +122,7 @@ def main():
     'KCLT', 'KCQT', 'KHOU', 'KIND', 'KJAX',
     'KMDW', 'KNYC', 'KPHL', 'KPHX', 'KSEA'
     """
-    station = 'KSEA'
+    station = 'KPHX'
 
     df = pd.read_csv(f'data/{station}.csv')
 

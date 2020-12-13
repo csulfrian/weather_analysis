@@ -2,7 +2,8 @@
 ## by Chris Sulfrian
 12/2020
 
-Data from FiveThirtyEight's open data repository, all scraped from Wunderground.com
+Data from FiveThirtyEight's open data repository:
+
 https://github.com/fivethirtyeight/data/tree/master/us-weather-history
 
 
